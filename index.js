@@ -34,9 +34,9 @@ document.addEventListener("keydown", (event) => {
       // Entire Konami Code sequence was entered
       console.log("Cheat code detected!");
       // Changes the theme
-      style.href = "stylegeek.css"
+      style.href = "stylegeek.css";
       // Scrolls to top
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
       // Removes the switch
       const removeSwitch = document.getElementById("themeSwitch");
       removeSwitch.remove();
@@ -64,42 +64,48 @@ document.addEventListener("keydown", (event) => {
       pCharacter.innerHTML =
         "<b>Nombre:</b> Fran <br><b>Edad:</b> 33 <br><b>Clase:</b> Estudiante <br><b> Campaña:</b> The Bridge";
 
-
       // Changes projects
       const newAdventures = [
         {
-        src: "img/Essence-Front-Cover.jpg",
-        alt: "Portada del juego Exalted Essence",
-        title: "Exalted: Essence",
-        description: "La temática se enfoca en la creación de historias de fantasía, aventuras y exploración en un mundo de ambientación medieval y mágica",
-      },
-      {
-        src: "img/PHB_Mobile.jpeg",
-        alt: "Portada del juego Dungeons&Dragons",
-        title: "Dungeons & Dragons",
-        description: "Juego de rol que combina elementos de fantasía épica, mitología y artes marciales.",
-      },
-      {
-        src: "img/ScionOriginsCover.jpg",
-        alt: "Portada del juego Scion",
-        title: "Scion",
-        description: "Los jugadores asumen roles de estos semidioses y exploran un mundo lleno de mitología, donde deben equilibrar sus deberes divinos con su vida mortal.",
-      },
+          src: "img/Essence-Front-Cover.jpg",
+          alt: "Portada del juego Exalted Essence",
+          title: "Exalted: Essence",
+          description:
+            "La temática se enfoca en la creación de historias de fantasía, aventuras y exploración en un mundo de ambientación medieval y mágica",
+        },
+        {
+          src: "img/PHB_Mobile.jpeg",
+          alt: "Portada del juego Dungeons&Dragons",
+          title: "Dungeons & Dragons",
+          description:
+            "Juego de rol que combina elementos de fantasía épica, mitología y artes marciales.",
+        },
+        {
+          src: "img/ScionOriginsCover.jpg",
+          alt: "Portada del juego Scion",
+          title: "Scion",
+          description:
+            "Los jugadores asumen roles de estos semidioses y exploran un mundo lleno de mitología, donde deben equilibrar sus deberes divinos con su vida mortal.",
+        },
       ];
-    
+
       var projectElements = document.querySelectorAll(".project");
       for (let i = 0; i < newAdventures.length; i++) {
         projectElements[i].querySelector("img").src = newAdventures[i].src;
         projectElements[i].querySelector("img").alt = newAdventures[i].alt;
-        projectElements[i].querySelector("h3").textContent = newAdventures[i].title;
-        projectElements[i].querySelector("p").textContent = newAdventures[i].description;
+        projectElements[i].querySelector("h3").textContent =
+          newAdventures[i].title;
+        projectElements[i].querySelector("p").textContent =
+          newAdventures[i].description;
       }
 
       // Changes contact
-      const newContact = document.getElementById('contact').getElementsByTagName('p');
-      newContact[0].textContent = "Puedes enviar tus mensajes a través del cuervo de Invernalia:";
-      
-      
+      const newContact = document
+        .getElementById("contact")
+        .getElementsByTagName("p");
+      newContact[0].textContent =
+        "Puedes enviar tus mensajes a través del cuervo de Invernalia:";
+
       // Reset the index when you enter the cheat code
       currentIndex = 0;
     }
