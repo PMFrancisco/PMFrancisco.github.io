@@ -1,0 +1,277 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+h2, h3, h4, h5, h6{
+  line-height: 2em; 
+}
+
+/* Day mode styles */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+header {
+  background-color: #73c0fc;
+  color: #333;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+}
+
+/* Navigation styles */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+/* Section styles */
+
+footer {
+  text-align: right;
+  margin-right: 20px;
+}
+
+/* skills styles */
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skills img {
+  max-width: 150px;
+
+  transition: transform 0.5s;
+}
+.skills img:hover {
+  transform: scale(1.5);
+}
+
+/* Switch styles */
+/* https://uiverse.io/andrew-demchenk0/honest-stingray-90 */
+
+.switch {
+  font-size: 17px;
+  position: relative;
+  width: 64px;
+  height: 34px;
+  border: grey  1px solid;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #73c0fc;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  left: 2px;
+  bottom: 2px;
+  z-index: 2;
+  background-color: #e8e8e8;
+  transition: 0.4s;
+}
+
+.sun svg {
+  position: absolute;
+  top: 6px;
+  left: 36px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+
+.moon svg {
+  fill: #73c0fc;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+}
+
+/* .switch:hover */
+.sun svg {
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* .switch:hover */
+.moon svg {
+  animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  75% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.input:checked + .slider {
+  background-color: #183153;
+}
+
+.input:focus + .slider {
+  box-shadow: 0 0 1px #183153;
+}
+
+.input:checked + .slider:before {
+  transform: translateX(30px);
+}
+
+/* .projects styles*/
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.project {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  max-width: 342px;
+}
+
+.project img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project h3 {
+  margin-top: 10px;
+}
+
+/* a styles */
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1e6dbc;
+}
+
+/* Contact styles */
+
+#contact img {
+  max-width: 40px;
+  margin: 5px 20px;
+}
+
+@media (min-width: 768px) {
+  * {
+    scroll-padding-top: 130px; /* So it doeesn't get covered by the header */
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* To keep header on top of other elements */
+  }
+  body:nth-child(2) {
+    margin-top: 143px;
+  }
+}
+@media (min-width: 1024px) {
+  .project p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .project:hover p {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}

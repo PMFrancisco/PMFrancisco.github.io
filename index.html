@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Francisco Pérez - Portafolio</title>
+    <link id="page-style" rel="stylesheet" href="light.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Francisco Pérez Muñoz</h1>
+      <nav>
+        <ul id="navigation">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <!-- /* https://uiverse.io/andrew-demchenk0/honest-stingray-90 */-->
+        <label id="themeSwitch" class="switch">
+          <span class="sun" aria-hidden="true"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g fill="#ffd43b">
+                <circle r="5" cy="12" cx="12"></circle>
+                <path
+                  d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"
+                ></path>
+              </g></svg></span>
+          <span class="moon" aria-hidden="true"
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+              <path
+                d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+              ></path></svg></span>
+          <input type="checkbox" class="input" onclick="switchTheme()" />
+          <span class="slider" aria-hidden="true"></span>
+        </label>
+      </nav>
+    </header>
+
+    <section id="inicio">
+      <div class="container">
+        <h2>Bienvenido a mi Portafolio</h2>
+        <p>
+          Soy un estudiante de desarrollo web fullstack apasionado por la
+          creación de experiencias en línea excepcionales. <br />
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quasi
+          unde laudantium dignissimos quis provident nulla quo sunt! Repudiandae
+          eum alias dolores officia ullam asperiores, at ex vitae est veritatis
+          nostrum delectus distinctio dicta accusantium fugit voluptates, esse
+          consectetur. Esse beatae culpa et neque repellat!
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Mis Proyectos</h2>
+        <div class="projects">
+          <a href="proyecto1.html">
+            <div class="project">
+              <img src="img/placeholder-1.png" alt="Imagen del proyecto" />
+              <h3>Proyecto 1</h3>
+              <p>Descripción breve del proyecto.</p>
+            </div>
+          </a>
+          <a href="proyecto2.html">
+            <div class="project">
+              <img src="img/placeholder-1.png" alt="Imagen del proyecto" />
+              <h3>Proyecto 2</h3>
+              <p>Descripción un poco más larga del proyecto.</p>
+            </div>
+          </a>
+          <a href="proyecto3.html">
+            <div class="project">
+              <img src="img/placeholder-1.png" alt="Imagen del proyecto" />
+              <h3>Proyecto 3</h3>
+              <p>
+                Descripción mucho más larga que las dos anteriores para ver cómo
+                queda.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Add more projects here -->
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <div class="skills">
+          <img src="img/html-5logo.png" alt="HTML5 logo" />
+          <img src="img/csslogo.png" alt="CSS3 logo" />
+          <img src="img/jslogo.png" alt="JavaScript logo" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container contact">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme en:</p>
+        <div class="contact-icons">
+          <a href="mailto:francisco.perez.munoz@gmail.com">
+            <img src="img/gmail.png" alt="Email" />
+          </a>
+
+          <a href="https://www.linkedin.com/in/tuperfil" target="_blank">
+            <img src="img/linkedin.png" alt="LinkedIn" />
+          </a>
+
+          <a href="https://github.com/PMFrancisco" target="_blank">
+            <img src="img/github.png" alt="GitHub" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Francisco</p>
+    </footer>
+  </body>
+</html>
